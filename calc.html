@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Calculator</title>
+		<link href="bootstrap.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body class="bg-light">
+		<div class="container">
+			<dl class="row justify-content-center">
+				<dt class="col-1 leftText">
+					<lable class="col-form-lable">Цена:</lable>
+				</dt>
+				<dd class="col-2">
+					<input type="text" id="price" class="form-control" value=""
+					placeholder="Введите цену">
+				</dd>
+			</dl>
+			<dl class="row justify-content-center">
+				<dt class="col-1 leftText">
+					<lable for="number" class="col-form-lable">Количество:</lable>
+				</dt>
+				<dd class="col-2">
+					<input type="text" id="number" class="form-control" value=""
+					placeholder="Введите количество">
+				</dd>
+			</dl>
+			<div class="row justify-content-center">
+				<div class="col-1 text-end">
+					<input type="checkbox" value="" id="vat"
+					class="fofm-check-input">
+				</div>
+				<div class="col-2">
+					<lable for="vat" class="col-form-lable">Включить НДС(10%)</lable>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-1">
+					<p>Итого:</p>
+				</div>
+				<div class="col-2">
+					<p id="result">0</p>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-auto">
+					<button onclick="calculate()" type="button" class="btn btn-warning btn-lg"
+					id="button">Рассчитать</button>
+				</div>
+			</div>
+		</div>
+		<script src="code.js"></script>
+	</body>
+</html>
