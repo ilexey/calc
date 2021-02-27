@@ -1,4 +1,9 @@
-function calculate(){
+$(document).ready(function() {
+    $('#price, #number').keyup(function() {
+        $('#result').text($('#price').val() * $('#number').val());
+    });
+});
+/*function calculate(){
     var price = Number(document.getElementById("price").value);
     var number = Number(document.getElementById("number").value);
     var result = document.getElementById("result");
@@ -15,5 +20,5 @@ function calculate(){
     }
 
     result.innerHTML = count.toFixed(2);
-    }
+    }*/
     
