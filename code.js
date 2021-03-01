@@ -10,7 +10,11 @@ $(document).ready(function() {
         $(this).change(function() {            
             let price = parseFloat($('#price').val());
             let number = parseFloat($('#number').val());
-            let trademargin = 1 + parseFloat($('#trademargin').val()) / 100;
+            
+            let trademargin = 1;
+            $('#trademarg:checked').each(function() {
+                trademargin = 1 + parseFloat($('#trademargin').val()) / 100;
+            });
 
             let vat = 1;
             $('#vat:checked').each(function() {
