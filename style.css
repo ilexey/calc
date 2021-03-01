@@ -12,7 +12,11 @@ h1 {
 }
 
 .trademargin {
-    padding-top: 0px;
+    margin: 0px;
+}
+
+#trademargin {
+    display: none;
 }
 
 p {

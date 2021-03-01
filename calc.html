@@ -33,16 +33,24 @@
 					placeholder="Введите количество">
 				</dd>
 			</dl>
-			<dl class="row justify-content-center">
-				<dt class="col-1 leftText">
-					<lable for="trademargin" class="col-form-lable">
-						Торговая наценка (<span>до 100%</span>):</lable>
-				</dt>
-				<dd class="col-2">
+			<div class="row justify-content-center">
+				<div class="col-1 text-end">
+					<input type="checkbox" value="" id="trademarg"
+					class="fofm-check-input">
+				</div>
+				<div class="col-2">
+					<lable for="trademarg" class="col-form-lable">
+					Торговая наценка (<span>до 100%</span>):</lable>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-1">
+				</div>
+				<div class="col-2">
 					<input type="number" id="trademargin" class="form-control" value="0"
 					min="0" max="100">
-				</dd>
-			</dl>
+				</div>
+			</div>
 			<div class="row justify-content-center">
 				<div class="col-1 text-end">
 					<input type="checkbox" value="" id="vat"

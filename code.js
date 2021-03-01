@@ -2,6 +2,9 @@ $(document).ready(function() {
     $('h1').click(function() {
         $('.hide').toggle();
     });
+    $('#trademarg').click(function() {
+        $('#trademargin').toggle();
+    });
 
     $('input').each(function() {
         $(this).change(function() {            
