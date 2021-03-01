@@ -20,3 +20,7 @@ p {
     font-size: large;
     font-weight: bold;
 }
+
+span {
+    font-weight: normal;
+}
